@@ -42,3 +42,22 @@ class DataTransformationConfig:
     data_path: Path
     test_size: float
     random_state: int
+
+
+@dataclass
+class ModelTrainerConfig:
+    """
+    
+    Configuration class for model training operations.
+
+    This class contains all the parameters and paths needed for training
+    machine learning models, particularly focused on regression tasks.
+
+    """
+    root_dir: Path
+    train_data_path: Path
+    test_data_path: Path
+    model_name: str
+    alpha: float
+    l1_ratio: float
+    target_column: str

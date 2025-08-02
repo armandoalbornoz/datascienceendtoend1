@@ -62,11 +62,23 @@ class DataIngestion:
             unzip_path = self.config.unzip_dir
             os.makedirs(unzip_path, exist_ok=True)
 
-
             with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
-                zip_ref.extractall(unzip_path)
+               
 
-            logger.info(f"ZIP file extracted successfully to {unzip_path}")
+                # Get the CSV file name (there's only one file in the zip)
+                csv_file_name = [f for f in zip_ref.namelist() if f.endswith('.csv')][0]
+
+                # Extract the csv
+                zip_ref.extract(csv_file_name, path=unzip_path)
+
+
+                # Rename the extracted csv to data.csv
+
+                original_path = os.path.join(unzip_path, csv_file_name)
+                renamed_path = os.path.join(unzip_path, "data.csv")
+                os.rename(original_path, renamed_path)
+
+                logger.info(f"Extracted and renamed {csv_file_name} to data.csv in {unzip_path}")
 
         except zipfile.BadZipFile as e:
             logger.error(f"Invalid ZIP file {self.config.local_data_file}: {e}")

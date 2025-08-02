@@ -11,4 +11,4 @@ COLUMNS:
   Salary: int64  
 
 TARGET_COLUMN:
-  name: Salary
+  name: quality
