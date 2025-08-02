@@ -4,11 +4,6 @@ from src.datascience import logger
 import zipfile
 from src.datascience.entity.config_entity import (DataIngestionConfig)
 
-
-## Component-Data Ingestion
-import urllib.request as request
-import zipfile
-
 class DataIngestion:
     """
     Component for data ingestion operations including downloading and extracting files.

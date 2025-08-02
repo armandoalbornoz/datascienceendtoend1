@@ -25,3 +25,20 @@ class DataValidationConfig:
     STATUS_FILE: str
     unzip_data_dir: Path
     all_schema: dict
+
+
+@dataclass
+class DataTransformationConfig:
+    """
+    Configuration class for data transformation operations.
+    
+    Attributes:
+        root_dir: Directory where transformation artifacts will be stored
+        data_path: Path to the validated data file
+        test_size: Proportion of data to use for testing (default: 0.2)
+        random_state: Random seed for reproducibility (default: 42)
+    """
+    root_dir: Path
+    data_path: Path
+    test_size: float
+    random_state: int
