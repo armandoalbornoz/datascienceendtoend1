@@ -49,7 +49,7 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
     
 
 @ensure_annotations
-def create_directories(path_to_directories: List[str], verbose: bool = True) -> None:
+def create_directories(path_to_directories: List, verbose: bool = True):
     """
     Creates directories from a list of paths.
     
