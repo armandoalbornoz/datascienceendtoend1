@@ -1,1 +1,14 @@
-key: value
+COLUMNS:
+  Employee_ID: int64 
+  Name: object
+  Age: int64 
+  Gender: object
+  Department: object
+  Job_Title: object
+  Experience_Years: int64 
+  Education_Level: object
+  Location: object
+  Salary: int64  
+
+TARGET_COLUMN:
+  name: Salary
