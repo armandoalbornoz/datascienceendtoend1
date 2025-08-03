@@ -25,6 +25,14 @@ class DataTransformation:
             # Load data    
             logger.info(f"Loading data from: {self.config.data_path}")
             data = pd.read_csv(self.config.data_path)
+
+            if "Id" in data.columns:
+                data = data.drop("Id", axis=1)
+                # Save cleaned dataset
+                data_path = self.config.data_path
+                data.to_csv(data_path, index=False)
+                logger.info(f"Cleaned full dataset saved to {data_path}")
+
             logger.info(f"Data loaded successfully. Original shape: {data.shape}")
             
 
