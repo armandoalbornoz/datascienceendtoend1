@@ -5,6 +5,8 @@ from sklearn.linear_model import ElasticNet
 import joblib
 from src.datascience.entity.config_entity import ModelTrainerConfig
 
+
+
 class ModelTrainer:
     """
     Component for training machine learning models.

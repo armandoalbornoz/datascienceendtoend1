@@ -3,7 +3,16 @@ from pathlib import Path
 
 @dataclass
 class DataIngestionConfig:
-    """Configuration class for data ingestion parameters."""
+    """
+    Configuration class for data ingestion parameters.
+
+      Attributes:
+        root_dir: Directory where validation artifacts will be stored
+        source_URL: URL of the zip file we want to download
+        local_data_file: File path of the downloaded zip file
+        unzip_dir: File path of the dir that will contain our data
+    """
+    
     root_dir: Path
     source_URL: str
     local_data_file: Path
@@ -47,12 +56,7 @@ class DataTransformationConfig:
 @dataclass
 class ModelTrainerConfig:
     """
-    
     Configuration class for model training operations.
-
-    This class contains all the parameters and paths needed for training
-    machine learning models, particularly focused on regression tasks.
-
     """
     root_dir: Path
     train_data_path: Path
@@ -61,3 +65,16 @@ class ModelTrainerConfig:
     alpha: float
     l1_ratio: float
     target_column: str
+
+@dataclass
+class ModelEvaluationConfig:    
+    """
+    Configuration class for model evaluation operations.
+    """
+    root_dir: Path
+    test_data_path: Path
+    model_path: Path
+    all_params: dict
+    metric_file_name: Path
+    target_column: str
+    mlflow_uri: str

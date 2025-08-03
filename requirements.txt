@@ -1,5 +1,5 @@
 pandas
-mlflow
+mlflow==2.2.2 # required due to dagshub
 notebook
 numpy
 scikit-learn
@@ -13,3 +13,4 @@ types-PyYAML
 Flask
 Flask-Cors
 ipykernel
+python-dotenv
