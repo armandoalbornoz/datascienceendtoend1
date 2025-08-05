@@ -8,11 +8,16 @@ class DataExtractionConfig:
     Configuration class for data Extraction parameters.
 
     Attributes:
-        lat: 
-        lon: 
-        start_offset_days: 
-        end_offset_days: 
+        lat: The latitude of the location we want to get data from
+        lon: The longitude of the location we want to get data from
+        start_offset_days: start date is end_date minus this offset
+        end_offset_days: End data is based on today minus this offset
     """
+
+    lat: float
+    lon: float
+    start_offset_days: int
+    end_offset_days: int
 
 @dataclass
 class DataIngestionConfig:

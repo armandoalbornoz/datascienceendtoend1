@@ -6,3 +6,4 @@ artifacts/
 logs/
 mlruns/
 .env
+data/

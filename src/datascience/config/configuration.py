@@ -4,7 +4,8 @@ from src.datascience.entity.config_entity import (DataIngestionConfig,
                                                   DataValidationConfig, 
                                                   DataTransformationConfig, 
                                                   ModelTrainerConfig, 
-                                                  ModelEvaluationConfig)
+                                                  ModelEvaluationConfig,
+                                                  DataExtractionConfig)
 from src.datascience import logger
 
 
@@ -39,6 +40,18 @@ class ConfigurationManager:
             logger.error(f"Error initializing ConfigurationManager: {e}")
             raise
 
+
+    def get_data_extraction_config(self) -> DataExtractionConfig:
+        config = self.config.etl_data_extraction
+
+        data_extraction_config = DataExtractionConfig(
+            lat = config.lat,
+            lon = config.lon,
+            start_offset_days = config.start_offset_days,
+            end_offset_days = config.end_offset_days
+        )
+
+        return data_extraction_config
 
     def get_data_ingestion_config(self) -> DataIngestionConfig:
         config = self.config.data_ingestion
