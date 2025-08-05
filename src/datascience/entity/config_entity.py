@@ -40,17 +40,13 @@ class DataIngestionConfig:
     """
     Configuration class for data ingestion parameters.
 
-      Attributes:
-        root_dir: Directory where validation artifacts will be stored
-        source_URL: URL of the zip file we want to download
-        local_data_file: File path of the downloaded zip file
-        unzip_dir: File path of the dir that will contain our data
+    Args:
+        root_dir (Path): Directory where Ingestion artifacts will be stored
+        local_data_file (Path): Path where the data will be stored
     """
-    
     root_dir: Path
-    source_URL: str
     local_data_file: Path
-    unzip_dir: Path
+    
 
 @dataclass
 class DataValidationConfig:

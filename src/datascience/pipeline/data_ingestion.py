@@ -12,7 +12,7 @@ class DataIngestionTrainingPipeline:
             config= ConfigurationManager()
             data_ingestion_config = config.get_data_ingestion_config()
             data_ingestion = DataIngestion(config=data_ingestion_config)
-            data_ingestion.perform_data_ingestion()
+            data_ingestion.ingest_data()
         except Exception as e:
             raise e
 
