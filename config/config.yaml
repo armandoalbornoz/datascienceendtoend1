@@ -6,6 +6,9 @@ etl_data_extraction:
   start_offset_days: 6
   end_offset_days: 5
 
+etl_data_transformation:
+
+
 data_ingestion:
   root_dir: artifacts/data_ingestion
   source_URL: https://github.com/armandoalbornoz/datasets/raw/refs/heads/main/wine.zip

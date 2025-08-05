@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
+
 @dataclass
 class DataExtractionConfig:
     """
@@ -18,6 +19,10 @@ class DataExtractionConfig:
     lon: float
     start_offset_days: int
     end_offset_days: int
+
+@dataclass
+class ETLDataTransformationConfig:
+    pass
 
 @dataclass
 class DataIngestionConfig:
