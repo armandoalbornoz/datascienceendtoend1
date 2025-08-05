@@ -6,7 +6,7 @@ from pathlib import Path
 @dataclass
 class DataExtractionConfig:
     """
-    Configuration class for data Extraction parameters.
+    Configuration class for data extraction parameters.
 
     Attributes:
         lat: The latitude of the location we want to get data from
@@ -22,7 +22,18 @@ class DataExtractionConfig:
 
 @dataclass
 class ETLDataTransformationConfig:
+    """
+    Configuration class for ETL data transformation parameters.
+    """
     pass
+
+
+@dataclass
+class ETLDataLoadingConfig:
+    """
+    Configuration class for ETL data loading parameters.
+    """
+    port: int
 
 @dataclass
 class DataIngestionConfig:

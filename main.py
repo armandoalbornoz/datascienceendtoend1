@@ -1,6 +1,7 @@
 from src.datascience import logger
 from src.datascience.pipeline.data_extraction import DataExtractionTrainingPipeline
 from src.datascience.pipeline.etl_data_transformation import ETLDataTransformationDataPipeline
+from src.datascience.pipeline.data_loading import DataLoadingTrainingPipeline
 from src.datascience.pipeline.data_ingestion import DataIngestionTrainingPipeline
 from src.datascience.pipeline.data_validation import DataValidationTrainingPipeline
 from src.datascience.pipeline.data_transformation import DataTransformationDataPipeline
@@ -26,11 +27,22 @@ try:
     logger.info(f"----- Stage {STAGE_NAME} started -----")
     obj = ETLDataTransformationDataPipeline(data=extracted_data)
     transformed_data = obj.run()
-    print(transformed_data.head())
     logger.info(f"----- Stage {STAGE_NAME} completed ----- \n\n")
 except Exception as e:
     logger.exception(e)
     raise e 
+
+
+STAGE_NAME = "ETL Data Loading Transformation Stage"
+try:
+    logger.info(f"----- Stage {STAGE_NAME} started -----")
+    obj = DataLoadingTrainingPipeline(transformed_data)
+    obj.run()
+    logger.info(f"----- Stage {STAGE_NAME} completed ----- \n\n")
+except Exception as e:
+    logger.exception(e)
+    raise e 
+
 
 
 # STAGE_NAME = "Data Ingestion Stage"

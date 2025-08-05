@@ -6,7 +6,8 @@ from src.datascience.entity.config_entity import (DataIngestionConfig,
                                                   ModelTrainerConfig, 
                                                   ModelEvaluationConfig,
                                                   DataExtractionConfig,
-                                                  ETLDataTransformationConfig)
+                                                  ETLDataTransformationConfig,
+                                                  ETLDataLoadingConfig)
 from src.datascience import logger
 
 
@@ -60,6 +61,15 @@ class ConfigurationManager:
         etl_data_transformation_config = ETLDataTransformationConfig()
 
         return etl_data_transformation_config
+    
+    def get_etl_data_loading_config(self) -> ETLDataLoadingConfig:
+        config = self.config.data_loading
+
+        etl_data_loading_config = ETLDataLoadingConfig(
+            port = config.port
+        )
+
+        return etl_data_loading_config
 
 
     def get_data_ingestion_config(self) -> DataIngestionConfig:

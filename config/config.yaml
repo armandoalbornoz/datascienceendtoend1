@@ -8,6 +8,8 @@ etl_data_extraction:
 
 etl_data_transformation:
 
+data_loading:
+  port: 5432
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
