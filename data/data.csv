@@ -1,0 +1,427 @@
+ingredients,glassType,alcoholic
+"gin, grand marnier, lemon juice, grenadine",Cocktail glass,Alcoholic
+"amaretto, baileys irish cream, cognac",Shot glass,Alcoholic
+"gin, grenadine, heavy cream, milk, egg white",Martini Glass,Alcoholic
+"151 proof rum, wild turkey",Shot glass,Alcoholic
+"absolut vodka, gin, tonic water",Highball Glass,Alcoholic
+"dark rum, lemon juice, grenadine",Cocktail glass,Alcoholic
+"applejack, grapefruit juice",Cocktail glass,Alcoholic
+"strawberry schnapps, orange juice, cranberry juice, club soda",Highball glass,Alcoholic
+"vodka, pisang ambon, apple juice, lemon juice, lemonade",Highball glass,Alcoholic
+"orange juice, grapefruit juice, apple juice, maraschino cherry",Collins Glass,Non alcoholic
+"dark rum, kahlua, egg white",Cocktail glass,Alcoholic
+"dark rum, peach nectar, orange juice",Highball glass,Alcoholic
+"gin, vermouth",Martini Glass,Alcoholic
+"gin, lemon juice, maraschino liqueur",Cocktail glass,Alcoholic
+"applejack, triple sec, lemon juice",Cocktail glass,Alcoholic
+"scotch, sweet vermouth, dry vermouth, orange bitters",Cocktail glass,Alcoholic
+"light rum, triple sec, lime juice, sugar, egg white, mint",Old-fashioned glass,Alcoholic
+"gin, creme de cacao, light cream, nutmeg",Cocktail glass,Alcoholic
+"crown royal, kahlua, cream",Highball glass,Alcoholic
+"dry vermouth, bourbon, blackberry brandy, lemon juice, lemon peel",Cocktail glass,Alcoholic
+"campari, sweet vermouth, lemon peel, orange peel",Collins glass,Alcoholic
+"blended whiskey, dry vermouth, pineapple juice",Cocktail glass,Alcoholic
+"sweet vermouth, gin, bitters",Cocktail glass,Alcoholic
+"grenadine, orange juice, pineapple juice",Highball Glass,Non alcoholic
+"sweet vermouth, dry vermouth, soda water",Cocktail glass,Alcoholic
+"baileys irish cream, grand marnier, kahlua",Shot glass,Alcoholic
+"kahlua, sambuca, grand marnier",Collins Glass,Alcoholic
+"orange bitters, green chartreuse, gin, sweet vermouth",Cocktail glass,Alcoholic
+"gin, triple sec, lemon juice, grenadine, egg white",Whiskey sour glass,Alcoholic
+"irish cream, goldschlager",Shot glass,Alcoholic
+"champagne, peach schnapps",Champagne Flute,Alcoholic
+"gin, lemon juice, sugar syrup, creme de mure",Old-Fashioned glass,Alcoholic
+"scotch, sweet vermouth, dry vermouth, bitters",Cocktail glass,Alcoholic
+"gin, triple sec, blue curacao, bitters, maraschino cherry, lemon peel",Cocktail glass,Alcoholic
+"rye whiskey, dry vermouth, maraschino liqueur, angostura bitters, maraschino cherry",Cocktail glass,Alcoholic
+"pineapple juice, passion fruit juice, lemon juice, grenadine",Highball glass,Non alcoholic
+"gin, dry vermouth, bitters, maraschino liqueur, maraschino cherry",Cocktail glass,Alcoholic
+"rum, galliano, pineapple juice, lime juice, prosecco",Margarita glass,Alcoholic
+"hot chocolate, green chartreuse, cherry heering",Coupe Glass,Alcoholic
+"151 proof rum, scotch, bitters, wormwood, ice",Highball glass,Alcoholic
+"corona, bacardi limon",Beer pilsner,Alcoholic
+"everclear, vodka, mountain dew, surge, lemon juice, rum",Punch bowl,Alcoholic
+"sweet vermouth, sloe gin, lemon peel",Cocktail glass,Alcoholic
+"midori melon liqueur, jägermeister, goldschlager",Shot glass,Alcoholic
+"southern comfort, triple sec, lime, sour mix",Highball glass,Alcoholic
+"vodka, banana liqueur, orange juice, peach schnapps",Shot glass,Alcoholic
+"baileys irish cream, kahlua, sambuca",Shot glass,Alcoholic
+"kahlua, milk, vanilla ice-cream",Collins Glass,Alcoholic
+"blended whiskey, lemon, powdered sugar, egg white, lemon, cherry",Whiskey sour glass,Alcoholic
+"rum, dark rum, banana liqueur, grenadine, pineapple juice, orange juice, sweet and sour",Highball glass,Alcoholic
+"gin, maraschino liqueur, lemon juice, orange bitters, cherry",Cocktail glass,Alcoholic
+"coffee, milk, triple sec, brandy",Coffee mug,Alcoholic
+"sugar, lime, cachaca",Old-fashioned glass,Alcoholic
+"spiced rum, ginger ale",Highball glass,Alcoholic
+"dark rum, lime, coca-cola, ice",Highball glass,Alcoholic
+"light rum, cherry brandy, light cream",Cocktail glass,Alcoholic
+"light rum, lime, coca-cola",Highball glass,Alcoholic
+"lime, falernum, angostura bitters, añejo rum, blackstrap rum",Old-fashioned glass,Alcoholic
+"bacardi limon, coca-cola",Highball Glass,Alcoholic
+"light rum, triple sec, lime juice, maraschino liqueur",Cocktail glass,Alcoholic
+"gin, grenadine, lemon, egg white",Cocktail glass,Alcoholic
+"lime, sugar, white rum, ice",Collins Glass,Alcoholic
+"brandy, triple sec, lemon juice",Cocktail glass,Alcoholic
+"lager, campari",Beer mug,Alcoholic
+"light rum, port, lemon, powdered sugar, egg white, carbonated water",Highball glass,Alcoholic
+"vodka, lime juice, cointreau, cranberry juice",Cocktail glass,Alcoholic
+"water, sugar, coffee, vanilla, vodka, caramel coloring",Collins Glass,Alcoholic
+"gin, lemon juice, maraschino liqueur, orange bitters, egg yolk",Whiskey sour glass,Alcoholic
+"gin, triple sec, lillet blanc, lemon juice, absinthe",Cocktail glass,Alcoholic
+"chocolate liqueur, milk, amaretto",Shot Glass,Alcoholic
+"sweet vermouth, sloe gin, wine",Cocktail glass,Alcoholic
+"coffee, vanilla extract, sugar, vodka, water",Collins Glass,Alcoholic
+"coca-cola, lemon juice",Cocktail glass,Non alcoholic
+"chocolate, milk, water",Coffee mug,Non alcoholic
+"cranberry juice, sugar, pineapple juice, almond flavoring, ginger ale",Punch Bowl,Non alcoholic
+"gin, peach bitters, mint",Cocktail glass,Alcoholic
+"lager, cider, blackcurrant cordial",Pint glass,Alcoholic
+"light rum, lime, powdered sugar",Cocktail glass,Alcoholic
+"coffee, everclear",Coffee Mug,Alcoholic
+"fruit punch, sprite, tequila, 151 proof rum",Hurricane glass,Alcoholic
+"gin, ginger ale, lime",Highball glass,Alcoholic
+"gin, dry vermouth, olive",Cocktail glass,Alcoholic
+"scotch, dry vermouth, lemon peel",Cocktail glass,Alcoholic
+"kahlua, sambuca, baileys irish cream",Shot glass,Alcoholic
+"vodka, dry vermouth, olive brine, lemon, olive",Cocktail glass,Alcoholic
+"cherry heering, soda water, orange juice, ice",Cocktail glass,Alcoholic
+"dark rum, ginger beer",Highball glass,Alcoholic
+"demerara sugar, lime, cachaca",Highball glass,Alcoholic
+"pisco, lime juice, pineapple syrup, st. germain, angostura bitters, pepper, lavender",Old-fashioned glass,Alcoholic
+"whiskey, hot damn",Shot glass,Alcoholic
+"dubonnet rouge, gin, bitters, lemon peel",Cocktail glass,Alcoholic
+"heavy cream, milk, cinnamon, vanilla, chocolate, whipped cream",Coffee mug,Non alcoholic
+"absinthe, champagne",Margarita glass,Alcoholic
+"chocolate syrup, milk, soda water",Coffee mug,Non alcoholic
+"egg yolk, sugar, milk, light rum, bourbon, vanilla extract, salt, whipping cream, egg white, sugar, nutmeg",Punch bowl,Optional alcohol
+"brandy, gin, sweet vermouth, carbonated water, lemon peel",Highball glass,Alcoholic
+"vodka, kahlua, sugar syrup",Cocktail glass,Alcoholic
+"rum, vanilla syrup, espresso, coffee",Cocktail glass,Alcoholic
+"egg, sugar, condensed milk, milk, vanilla extract, rum, nutmeg",Collins Glass,Optional alcohol
+"apricot brandy, gin, dry vermouth, grenadine, lemon juice, cherry",Cocktail glass,Alcoholic
+"cachaca, lime, elderflower cordial",Collins glass,Alcoholic
+"egg, sugar, salt, milk, vanilla extract",Pitcher,Optional alcohol
+"mezcal, chocolate liqueur, coffee liqueur",Beer Glass,Alcoholic
+"rose, sugar, strawberries, lemon juice",Cocktail glass,Alcoholic
+"coffee, milk, sugar",Highball Glass,Non alcoholic
+"amaretto, creme de cacao, light cream",Cocktail glass,Alcoholic
+"gin, sugar, lemon juice, champagne, orange, maraschino cherry",Collins glass,Alcoholic
+"vodka, honey, figs, thyme, angostura bitters, tonic water",Highball glass,Alcoholic
+"blended whiskey, benedictine, lemon, lime, lemon, lime",Whiskey sour glass,Alcoholic
+"yoghurt, banana, orange juice, fruit, ice",Highball Glass,Non alcoholic
+"apple juice, strawberries, sugar, lemon, apple, soda water, ice",Highball Glass,Non alcoholic
+"jägermeister, sambuca, vodka",Shot glass,Alcoholic
+"rum, apricot nectar, pomegranate juice, lemon, soda water",Collins glass,Alcoholic
+"coffee, peach schnapps",Coffee mug,Alcoholic
+"vodka, raspberry liqueur, pineapple juice",Cocktail glass,Alcoholic
+"gin, lillet, sweet vermouth, orange peel",Martini Glass,Alcoholic
+"firewater, absolut peppar, tabasco sauce",Shot glass,Alcoholic
+"gin, triple sec",Old-fashioned glass,Alcoholic
+"light rum, triple sec, lime juice, sugar, cherry, ice",Champagne flute,Alcoholic
+"yoghurt, fruit juice",Highball Glass,Non alcoholic
+"scotch, sweet vermouth, bitters, sugar syrup",Cocktail glass,Alcoholic
+"cognac, amaretto",Old-fashioned glass,Alcoholic
+"amaretto, vodka, 151 proof rum, dr. pepper, beer",Collins Glass,Alcoholic
+"kahlua, sambuca, blue curacao, baileys irish cream",Cocktail glass,Alcoholic
+"sambuca, sarsaparilla",Collins Glass,Alcoholic
+"light rum, lime juice, mint, sugar",Old-fashioned glass,Alcoholic
+"light rum, pineapple, lime juice, sugar",Cocktail Glass,Alcoholic
+"galliano, ginger ale, ice",Collins Glass,Optional alcohol
+"gin, lime juice, sugar syrup, lime",Martini Glass,Alcoholic
+"vodka, amaretto, heavy cream",Champagne flute,Alcoholic
+"gin, lemon, powdered sugar, carbonated water",Highball glass,Alcoholic
+"gin, lemon juice, sugar, orange, maraschino cherry",Whiskey sour glass,Alcoholic
+"peach vodka, lemon juice, galliano, sirup of roses",Cocktail glass,Alcoholic
+"vodka, amaretto",Old-fashioned glass,Alcoholic
+"scotch, amaretto",Old-fashioned glass,Alcoholic
+"red wine, water, sugar, cinnamon, cloves, lemon peel",Irish coffee cup,Optional alcohol
+"gin, tonic water, lemon peel, ice",Highball glass,Alcoholic
+"gin, water, powdered sugar, lemon peel",Old-fashioned glass,Alcoholic
+"gin, carbonated water, sugar, mint, orange, cherry",Old-fashioned glass,Alcoholic
+"gin, lemon juice, sugar, grenadine, maraschino cherry, orange",Old-fashioned glass,Alcoholic
+"gin, lemon juice, lemon peel, ice",Highball glass,Alcoholic
+"gin, lemon, powdered sugar, water, orange peel",Old-fashioned glass,Alcoholic
+"vodka, grapefruit juice",Collins glass,Alcoholic
+"gin, grenadine, lemon, soda water, lime",Highball glass,Alcoholic
+"gin, grenadine, powdered sugar, pineapple, strawberries, carbonated water",Highball glass,Alcoholic
+"malibu rum, peach schnapps, blue curacao, sweet and sour",Old-fashioned glass,Alcoholic
+"gin, carbonated water, powdered sugar, orange spiral, lemon peel",Collins glass,Alcoholic
+"lime juice, sugar, gin, bitters, club soda",Highball glass,Alcoholic
+"gin, triple sec, pineapple juice, grenadine, pineapple",Old-fashioned glass,Alcoholic
+"green creme de menthe, creme de cacao, light cream",Cocktail glass,Alcoholic
+"kahlua, 151 proof rum, grenadine",Old-fashioned glass,Alcoholic
+"gin, soda water, lime",Highball glass,Alcoholic
+"whisky, baileys irish cream, coffee",Beer mug,Alcoholic
+"white rum, honey, lemon juice",Margarita glass,Alcoholic
+"whiskey, honey, cinnamon, lemon, cloves",Irish coffee cup,Alcoholic
+"hot damn, tea",Mason jar,Alcoholic
+"lemon peel, brandy, ginger ale, bitters",Highball glass,Alcoholic
+"spiced rum, ginger ale, lime, ice",Highball glass,Alcoholic
+"vermouth, maraschino cherry, sugar syrup, lemonade, blackberries",Balloon Glass,Alcoholic
+"cherry juice, orange peel, red chili flakes, cloves, ginger, vodka",Punch bowl,Alcoholic
+"light rum, pineapple juice, lemon juice",Cocktail glass,Alcoholic
+"grape juice, carbonated soft drink, sherbet, sherbet",Punch bowl,Non alcoholic
+"sugar, corn syrup, coffee, vanilla extract, water, vodka",Collins Glass,Alcoholic
+"irish whiskey, baileys irish cream, coffee",Irish coffee cup,Alcoholic
+"vodka, galliano, orange juice",Collins glass,Alcoholic
+"gin, triple sec, pineapple juice",Cocktail glass,Alcoholic
+"rum, grapefruit juice, maraschino liqueur, lime juice",Cocktail glass,Alcoholic
+"scotch, sweet vermouth, orange bitters, olive",Cocktail glass,Alcoholic
+"chocolate, butter, vanilla extract, half-and-half, marshmallows",Coffee mug,Non alcoholic
+"lime, brown sugar, passion fruit juice, ginger ale, ice",Wine Glass,Non alcoholic
+"vodka, iced tea, lemon juice",Collins Glass,Alcoholic
+"coffee, sugar, water, milk",Coffee mug,Non alcoholic
+"scotch, half-and-half, condensed milk, coconut syrup, chocolate syrup",Irish coffee cup,Alcoholic
+"irish whiskey, coffee, sugar, whipped cream",Irish coffee cup,Alcoholic
+"irish whiskey, peach brandy, orange juice, sweet and sour, orange, cherry",Collins glass,Alcoholic
+"light rum, blended whiskey, lemon, powdered sugar, carbonated water",Highball glass,Alcoholic
+"vodka, kahlua, coca-cola, guinness stout",Highball glass,Alcoholic
+"lime juice, gin, aperol",Cocktail glass,Alcoholic
+"kahlua, coffee",Coffee mug,Alcoholic
+"baileys irish cream, bourbon, vodka, orange juice",Highball glass,Alcoholic
+"baileys irish cream, chambord raspberry liqueur, sugar syrup, sugar",Shot glass,Alcoholic
+"gin, vodka, grenadine, lime juice, sugar, sugar syrup, soda water",Cocktail Glass,Alcoholic
+"jack daniels, amaretto",Collins Glass,Alcoholic
+"blackberry brandy, anis",Cordial glass,Alcoholic
+"vodka, jello, water",Shot glass,Alcoholic
+"coffee liqueur, light rum, ice, milk",Hurricane glass,Alcoholic
+"bourbon, lemon juice, sugar, club soda, maraschino cherry, orange",Collins glass,Alcoholic
+"blended whiskey, lemon, powdered sugar, port, egg white, carbonated water",Highball glass,Alcoholic
+"rum, coffee, water, whipped cream",Champagne flute,Alcoholic
+"milk, chocolate syrup, mint syrup",Highball Glass,Non alcoholic
+"gin, green chartreuse, yellow chartreuse",Cocktail glass,Alcoholic
+"apple brandy, grenadine, lime",Cocktail glass,Alcoholic
+"ice, tennessee whiskey, vanilla extract, coca-cola",Old-fashioned glass,Alcoholic
+"creme de cassis, champagne",Wine Glass,Alcoholic
+"coffee, grain alcohol",Highball glass,Alcoholic
+"vodka, triple sec, lime juice",Cocktail glass,Alcoholic
+"creme de cassis, champagne",Champagne Flute,Alcoholic
+"kiwi liqueur, bitter lemon, ice",Highball glass,Alcoholic
+"absolut kurant, tea, sugar",Champagne flute,Alcoholic
+"kahlua, brandy, coffee",Coffee mug,Alcoholic
+"kiwi, sugar syrup, vodka, kiwi",Cocktail glass,Alcoholic
+"cranberry vodka, apfelkorn, schweppes russchian, apple juice, ice",Highball glass,Alcoholic
+"vodka, amaretto, sloe gin, triple sec, cranberry juice",Old-fashioned glass,Alcoholic
+"151 proof rum, kool-aid",Shot glass,Alcoholic
+"bourbon, benedictine",Brandy snifter,Alcoholic
+"bourbon, benedictine, lemon peel",Cocktail glass,Alcoholic
+"kool-aid, vodka",Shot glass,Alcoholic
+"kiwi, papaya",Highball Glass,Non alcoholic
+"ginger, lemon, water",Highball glass,Non alcoholic
+"lime, sugar, soda water, lime peel",Highball glass,Non alcoholic
+"beer, amaretto, orange juice",Pint glass,Alcoholic
+"vodka, cointreau, lemon",Cocktail glass,Alcoholic
+"galliano, absolut citron, lemon, sugar, 151 proof rum",Shot glass,Alcoholic
+"vodka, lime, angostura bitters, tonic water, ice",Highball glass,Alcoholic
+"yoghurt, water, salt, asafoetida",Highball Glass,Non alcoholic
+"yoghurt, ice, sugar, lime, salt",Highball Glass,Non alcoholic
+"ginger, water, lemon, sugar, cayenne pepper",Highball Glass,Non alcoholic
+"scotch, drambuie, dry vermouth, lemon peel",Cocktail glass,Alcoholic
+"gin, maraschino liqueur, orange bitters",Cocktail glass,Alcoholic
+"mango, yoghurt, sugar, water",Highball glass,Non alcoholic
+"yoghurt, water, sugar, salt, lemon juice",Highball glass,Non alcoholic
+"corona, bacardi limon",Beer Glass,Alcoholic
+"dark rum, tia maria",Old-fashioned glass,Alcoholic
+"gin, light cream, powdered sugar, lemon, egg white, carbonated water",Cocktail glass,Alcoholic
+"vodka, light rum, gin, tequila, lemon, coca-cola",Highball glass,Alcoholic
+"carbonated water, gin, dry vermouth, powdered sugar, orange spiral, lemon peel",Collins glass,Alcoholic
+"sweet vermouth, gin",Cocktail glass,Alcoholic
+"coconut liqueur, grapefruit juice, soda water",Highball glass,Alcoholic
+"vodka, tequila, light rum, gin, coca-cola, lemon peel",Highball glass,Alcoholic
+"elderflower cordial, vodka, soda water, fresh lemon juice",Highball glass,Alcoholic
+"yoghurt, water, cumin seed, salt, mint",Highball Glass,Non alcoholic
+"espresso, honey, cocoa powder",Coffee mug,Non alcoholic
+"light rum, lime, sugar, mint, soda water",Highball glass,Alcoholic
+"champagne, orange juice",Champagne flute,Alcoholic
+"light rum, orgeat syrup, triple sec, sweet and sour, cherry",Collins glass,Alcoholic
+"gin, dry vermouth, olive",Cocktail glass,Alcoholic
+"beer, tomato juice, lime juice, hot sauce, worcestershire sauce, soy sauce",Pint glass,Alcoholic
+"sweet vermouth, bourbon, angostura bitters, ice, maraschino cherry, orange peel",Cocktail glass,Alcoholic
+"tequila, triple sec, lime juice, salt",Cocktail glass,Alcoholic
+"ricard, orgeat syrup, water",Collins glass,Alcoholic
+"mint, bourbon, powdered sugar, water",Collins glass,Alcoholic
+"southern comfort, orange juice, pepsi cola",Punch bowl,Alcoholic
+"gin, sweet vermouth, maraschino liqueur, angostura bitters",Cocktail glass,Alcoholic
+"absinthe, tequila, grenadine",Shot glass,Alcoholic
+"151 proof rum, pina colada mix, daiquiri mix",Cocktail glass,Alcoholic
+"vodka, lime juice, ginger ale",Copper Mug,Alcoholic
+"water, sugar, cloves, cinnamon, lemon peel, red wine, brandy",Collins Glass,Alcoholic
+"water, tea, ginger, cardamom, cloves, cinnamon, black pepper, sugar, milk",Coffee Mug,Non alcoholic
+"gin, lime juice, ginger beer, cucumber, lemon",Highball glass,Alcoholic
+"coffee, chambord raspberry liqueur, cocoa powder, whipped cream",Irish coffee cup,Alcoholic
+"lime, mango, mint, white rum, ice, soda water, mango",Jar,Alcoholic
+"mint, lemon juice, dark rum, club soda, angostura bitters",Collins glass,Alcoholic
+"gin, benedictine, orange juice, grenadine",Cocktail glass,Alcoholic
+"baileys irish cream, white creme de menthe, cream",Cocktail glass,Alcoholic
+"light rum, pineapple juice, maraschino liqueur, grenadine, maraschino cherry",Cocktail glass,Alcoholic
+"light rum, grapefruit juice, bitters",Old-fashioned glass,Alcoholic
+"gin, campari, sweet vermouth",Old-fashioned glass,Alcoholic
+"blended whiskey, lemon, sugar, red wine, lemon, cherry",Whiskey sour glass,Alcoholic
+"baileys irish cream, frangelico, milk",Highball Glass,Alcoholic
+"rum, vodka, gin, blue curacao, sour mix, lemon-lime soda",Collins Glass,Alcoholic
+"absolut citron, grand marnier, lemon juice, club soda",Cocktail glass,Alcoholic
+"cocoa powder, sugar, vanilla extract, milk",Coffee mug,Non alcoholic
+"creme de cacao, amaretto, triple sec, vodka, light cream",Cocktail glass,Alcoholic
+"rye whiskey, campari, dry vermouth",Nick and Nora Glass,Alcoholic
+"white rum, sugar syrup, lime juice, angostura bitters, prosecco",Cocktail glass,Alcoholic
+"lemon juice, orange juice, sugar syrup, soda water",Highball glass,Non alcoholic
+"orange juice, rum, vodka, cream, ice",Collins Glass,Alcoholic
+"vodka, triple sec, orange juice",Shot glass,Alcoholic
+"cherry brandy, gin, orange juice, ginger ale",Highball glass,Alcoholic
+"bourbon, angostura bitters, sugar, water",Old-fashioned glass,Alcoholic
+"vodka, kahlua, baileys irish cream, vanilla ice-cream, oreo cookie",Collins Glass,Alcoholic
+"kahlua, baileys irish cream, butterscotch schnapps, jagermeister, goldschlager",Mason jar,Alcoholic
+"spiced rum, grenadine, orange juice, sour mix",Hurricane glass,Alcoholic
+"gin, orange juice, lemon juice, rosemary syrup, soda water, rosemary, orange peel",Highball glass,Alcoholic
+"milk, chocolate, orange peel, espresso, nutmeg",Coffee mug,Non alcoholic
+"whiskey, beer, lemonade, ice",Highball glass,Alcoholic
+"grape soda, tequila",Collins glass,Alcoholic
+"gin, apricot brandy, orange juice",Cocktail glass,Alcoholic
+"bitters, gin",White wine glass,Alcoholic
+"gin, orange curacao, lime juice, angostura bitters, orange bitters",Cocktail glass,Alcoholic
+"gin, grenadine, light cream, egg white",Cocktail glass,Alcoholic
+"gin, coconut liqueur, elderflower cordial, lime juice, blackberries",Whiskey Glass,Alcoholic
+"blended scotch, lemon juice, honey syrup, ginger syrup, islay single malt scotch",Old-fashioned glass,Alcoholic
+"pisco, lemon juice, sugar, ice, egg white",Cocktail glass,Alcoholic
+"brandy, port, egg yolk",Cocktail glass,Alcoholic
+"light rum, coconut milk, pineapple",Collins glass,Alcoholic
+"everclear, vodka, peach schnapps, orange juice, cranberry juice",Punch bowl,Alcoholic
+"rum, passoa, lime juice, passion fruit syrup, peach bitters, mint",Whiskey sour glass,Alcoholic
+"vodka, cherry liqueur, cranberry juice, orange juice",Highball glass,Alcoholic
+"gin, creme de cacao",Cocktail glass,Alcoholic
+"port, light cream, powdered sugar, egg, nutmeg",Whiskey sour glass,Alcoholic
+"dark rum, orgeat syrup, orange juice, pineapple juice",Collins glass,Alcoholic
+"tequila, grapefruit juice, fresh lime juice, pineapple juice, lime, pepper",Collins glass,Alcoholic
+"vodka, passoa, passion fruit juice, lime, prosecco",Cocktail glass,Alcoholic
+"dark rum, orange juice, pineapple juice, grenadine, sugar syrup, angostura bitters",Highball glass,Alcoholic
+"grenadine, green creme de menthe",Pousse cafe glass,Alcoholic
+"port, brandy",Cocktail glass,Alcoholic
+"orange juice, apple juice, pineapple juice, ice",Collins Glass,Non alcoholic
+"sprite, pink lemonade, vodka",Collins Glass,Alcoholic
+"vodka, sugar syrup, passion fruit juice",Cocktail glass,Alcoholic
+"ginger, pineapple",Highball Glass,Non alcoholic
+"dark rum, kahlua, light cream, nutmeg",Cocktail glass,Alcoholic
+"coffee brandy, lime vodka, sherry",Cocktail glass,Alcoholic
+"kahlua, midori melon liqueur, baileys irish cream",Shot glass,Alcoholic
+"black sambuca, orange juice",Highball glass,Alcoholic
+"red wine, grenadine, lemon-lime soda",Collins glass,Alcoholic
+"dry vermouth, gin, benedictine",Cocktail glass,Alcoholic
+"light rum, brandy, lemon, raspberry syrup",Cocktail glass,Alcoholic
+"light rum, sherry, lime",Cocktail glass,Alcoholic
+"dry vermouth, gin, apricot brandy, lemon juice, grenadine, powdered sugar",Cocktail glass,Alcoholic
+"beer, 7-up",Highball glass,Alcoholic
+"light rum, lemon juice, sugar, orange, maraschino cherry",Whiskey sour glass,Alcoholic
+"rum, ginger ale, fruit punch, orange juice, ice",Punch bowl,Alcoholic
+"rum, powdered sugar, lemon peel, water",Old-fashioned glass,Alcoholic
+"gin, sweet and sour, egg, coca-cola",Collins glass,Alcoholic
+"rum, lemon-lime soda, lemon",Collins glass,Alcoholic
+"malibu rum, blackberry brandy, orange juice, pineapple juice, cranberry juice",Cocktail glass,Alcoholic
+"scotch, drambuie, lemon peel",Old-fashioned glass,Alcoholic
+"crown royal, amaretto, cranberry juice",Old-fashioned glass,Alcoholic
+"frangelico, crown royal",Shot glass,Alcoholic
+"crown royal, peach schnapps, chambord raspberry liqueur, cranberry juice",Old-fashioned glass,Alcoholic
+"sugar, club soda, lemon, dark rum, maraschino cherry, orange",Old-fashioned glass,Alcoholic
+"gin, cranberry juice, grenadine",Highball glass,Alcoholic
+"sugar syrup, lemon juice, ginger ale",Highball glass,Non alcoholic
+"gin, blue curacao, tonic water, rosemary",Balloon Glass,Alcoholic
+"gin, lemon juice, sugar syrup, cream, egg white, vanilla extract, soda water",Highball glass,Alcoholic
+"gin, lemon, powdered sugar, egg, carbonated water",Highball glass,Alcoholic
+"light rum, milk, powdered sugar, nutmeg",Collins glass,Alcoholic
+"bourbon, raspberry syrup, mint",Cordial glass,Alcoholic
+"light rum, orange juice",Highball glass,Alcoholic
+"raspberry vodka, lemon-lime soda, ice",Highball glass,Alcoholic
+"light rum, 151 proof rum, powdered sugar, bitters, water, lime peel",Old-fashioned glass,Alcoholic
+"vodka, creme de cassis, sugar syrup, lemon juice",Highball glass,Alcoholic
+"rum, vodka, tequila, gin, triple sec, chambord raspberry liqueur, midori melon liqueur, malibu rum",Collins Glass,Alcoholic
+"red wine, peach schnapps, pepsi cola, orange juice",Beer mug,Alcoholic
+"prosecco, campari, soda water",Old-Fashioned glass,Alcoholic
+"brandy, amaretto, light cream",Cocktail glass,Alcoholic
+"red wine, sugar, orange juice, lemon juice, cloves, cinnamon",Pitcher,Alcoholic
+"brandy, white creme de menthe",Cocktail glass,Alcoholic
+"ricard, sugar, peychaud bitters, water, bourbon, lemon peel",Old-fashioned glass,Alcoholic
+"cognac, cointreau, lemon juice",Cocktail glass,Alcoholic
+"vodka, amaro montenegro, ruby port, blood orange, angostura bitters, orange peel",Collins glass,Alcoholic
+"sugar, allspice, rum, lime juice, champagne, orange spiral",Wine Glass,Alcoholic
+"advocaat, lemonade, lemon, ice",Highball glass,Alcoholic
+"jim beam, jack daniels, wild turkey",Shot glass,Alcoholic
+"grapefruit juice, gin, salt",Highball glass,Alcoholic
+"apricot brandy, orange juice, sweet and sour",Whiskey sour glass,Alcoholic
+"vodka, cranberry juice, grapefruit juice",Highball glass,Alcoholic
+"scotch, lime, powdered sugar, lemon, cherry",Whiskey sour glass,Alcoholic
+"godiva liqueur, milk",Highball Glass,Alcoholic
+"vodka, orange juice",Highball glass,Alcoholic
+"sherry, light cream, powdered sugar, egg, nutmeg",Nick and Nora Glass,Alcoholic
+"brandy, anisette",Brandy snifter,Alcoholic
+"lemonade, water, vodka",Pitcher,Alcoholic
+"vodka, creme de banane, grenadine, orange juice",Highball glass,Alcoholic
+"151 proof rum, malibu rum, pineapple juice, orange juice, grenadine, cherries",Highball glass,Alcoholic
+"sherry, powdered sugar, egg, milk, nutmeg",Collins glass,Alcoholic
+"milk, banana, honey",Highball Glass,Non alcoholic
+"red wine, sugar, water, apple, orange, lime, lemon, fresca",Pitcher,Alcoholic
+"scotch, wine, orange juice",Cocktail glass,Alcoholic
+"dark rum, campari, creme de banane, pineapple juice, lime juice",Collins glass,Alcoholic
+"water, brown sugar, coffee, rum, vanilla extract",Collins Glass,Alcoholic
+"irish whiskey, sweet vermouth, green chartreuse",Nick and Nora Glass,Alcoholic
+"wild turkey, amaretto, pineapple juice",Shot glass,Alcoholic
+"kahlua, irish cream, amaretto, 151 proof rum, cream",Wine Glass,Alcoholic
+"coffee, coriander, cardamom, sugar, whipping cream, ice",Highball glass,Non alcoholic
+"gin, lemon juice, sugar, club soda, maraschino cherry, orange",Collins glass,Alcoholic
+"tomato juice, lemon juice, celery salt",Highball glass,Non alcoholic
+"grand marnier, coffee",Brandy snifter,Alcoholic
+"coffee, jack daniels, amaretto, whipped cream",Coffee Mug,Alcoholic
+"tequila, lemon juice, grenadine, egg white, ginger ale",Collins glass,Alcoholic
+"tequila, lemon, powdered sugar, lemon, cherry",Whiskey sour glass,Alcoholic
+"tea, water, condensed milk, ice, mint",Highball glass,Non alcoholic
+"green chartreuse, maraschino liqueur, lime juice, gin",Cocktail glass,Alcoholic
+"dry vermouth, gin, anis, bitters, orange peel",Cocktail glass,Alcoholic
+"gin, elderflower cordial, rosso vermouth, tonic water, lime, ginger, mint",Balloon Glass,Alcoholic
+"tequila, 7-up",Hurricane glass,Alcoholic
+"tequila, orange juice, grenadine",Highball glass,Alcoholic
+"gin, melon liqueur, orange bitters, lemon juice, prosecco",Margarita glass,Alcoholic
+"dry vermouth, gin, maraschino liqueur, anis, orange bitters, cherry",Cocktail glass,Alcoholic
+"tequila, tabasco sauce",Shot glass,Alcoholic
+"coffee, sugar, cream, cardamom",Highball glass,Non alcoholic
+"irish whiskey, amaretto, cranberry juice",Whiskey sour glass,Alcoholic
+"yukon jack, cherry brandy, southern comfort, sweet and sour",Highball glass,Alcoholic
+"gin, vodka, lillet blanc",Cocktail glass,Alcoholic
+"gin, sweet vermouth, brandy",Cocktail glass,Alcoholic
+"tequila, tomato juice, orange juice, lime juice, sugar syrup, salt",Old-Fashioned glass,Alcoholic
+"light rum, sweet vermouth, lemon, powdered sugar, egg white",Old-fashioned glass,Alcoholic
+"dark rum, cherry brandy",Old-fashioned glass,Alcoholic
+"light rum, maple syrup, lemon juice",Old-fashioned glass,Alcoholic
+"vodka, half-and-half, limeade, ice, nutmeg",White wine glass,Alcoholic
+"vodka, lemon juice, lemon peel, ice",Highball glass,Alcoholic
+"sprite, lime juice, vodka",Highball glass,Alcoholic
+"vodka, tonic water, lemon peel",Highball glass,Alcoholic
+"vodka, dry vermouth, olive",Cocktail glass,Alcoholic
+"vodka, schweppes russchian",Collins Glass,Alcoholic
+"dry vermouth, creme de cassis, carbonated water",Highball glass,Alcoholic
+"vodka, lemon juice, grape juice, powdered sugar, orange",Collins glass,Alcoholic
+"vodka, tonic water",Highball glass,Alcoholic
+"apricot brandy, orange juice, orange bitters",Cocktail glass,Alcoholic
+"scotch, wine",Collins Glass,Alcoholic
+"gin, triple sec, lemon juice",Cocktail glass,Alcoholic
+"red wine, lemon, orange juice, orange, pineapple juice",Collins Glass,Alcoholic
+"red wine, lemon-lime soda, ice",Collins Glass,Optional alcohol
+"tequila, campari, lime juice, orange juice, rosemary syrup, salt",Highball Glass,Alcoholic
+"blended whiskey, lemon, powdered sugar, cherry, lemon",Old-fashioned glass,Alcoholic
+"vodka, coffee liqueur, light cream",Old-fashioned glass,Alcoholic
+"tequila, grapefruit juice, lime juice, agave syrup, pepper",Highball glass,Alcoholic
+"lime, lemon, white wine, strawberries, apple, apple brandy, soda water",Pitcher,Alcoholic
+"ice, tequila, cream of coconut, lime juice",Margarita/Coupette glass,Alcoholic
+"triple sec, gin, pineapple juice",Cocktail glass,Alcoholic
+"white rum, galliano, triple sec, lime juice",Cocktail glass,Alcoholic
+"yoghurt, fruit, ice",Highball Glass,Non alcoholic
+"sambuca, baileys irish cream, white creme de menthe",Coffee Mug,Alcoholic
+"peachtree schnapps, surge",Highball glass,Alcoholic
+"beer, root beer, lemonade, coca-cola, 7-up, creme de cassis, lemon",Beer pilsner,Alcoholic
+"rum, gold rum, 151 proof rum, pernod, grenadine, lime juice, angostura bitters",Hurricane glass,Alcoholic
+"sambuca, root beer, ice",Collins Glass,Alcoholic
+"vodka, ouzo",Cocktail glass,Alcoholic
+"jägermeister, root beer",Collins Glass,Alcoholic
+"chambord raspberry liqueur, vodka, soda water",Whiskey sour glass,Alcoholic
+"zima, chambord raspberry liqueur",Hurricane glass,Alcoholic
+"cointreau, lemon juice, ice, lemon",Margarita/Coupette glass,Alcoholic
+"midori melon liqueur, zima",Collins glass,Alcoholic
+"amaretto, rum, kool-aid",Old-fashioned glass,Alcoholic
+"vermouth, apple juice",Collins Glass,Alcoholic

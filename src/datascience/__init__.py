@@ -6,10 +6,6 @@ configures a reusable logger.
 - Ensures the 'logs/' directory exists.
 - Provides a named logger 'datascienceLogger' for consistent logging across modules.
 
-Usage:
-    from datascience import logger
-    logger.info("Message")
-
 """
 
 import os 

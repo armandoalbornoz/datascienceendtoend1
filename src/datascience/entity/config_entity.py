@@ -1,6 +1,19 @@
 from dataclasses import dataclass
 from pathlib import Path
 
+
+@dataclass
+class DataExtractionConfig:
+    """
+    Configuration class for data Extraction parameters.
+
+    Attributes:
+        lat: 
+        lon: 
+        start_offset_days: 
+        end_offset_days: 
+    """
+
 @dataclass
 class DataIngestionConfig:
     """

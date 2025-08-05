@@ -35,3 +35,5 @@ The core stages of the pipeline are:
     7. Build/update the pipeline – Chain components together in a clean workflow.
 
     8. Update main.py – Entry point for triggering the pipeline.
+
+
