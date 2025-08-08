@@ -3,7 +3,7 @@ artifacts_root: artifacts
 etl_data_extraction:
   lat: 29.6516
   lon: -82.3248
-  start_offset_days: 6
+  start_offset_days: 730
   end_offset_days: 5
 
 etl_data_transformation:
