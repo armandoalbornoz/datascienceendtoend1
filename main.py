@@ -43,8 +43,6 @@ except Exception as e:
     logger.exception(e)
     raise e 
 
-
-
 STAGE_NAME = "Data Ingestion Stage"
 
 try:
@@ -68,16 +66,16 @@ except Exception as e:
 #     logger.exception(e)
 #     raise e 
 
-# STAGE_NAME = "Data Validation Stage"
+STAGE_NAME = "Data Transformation Stage"
 
-# try:
-#     logger.info(f"----- Stage {STAGE_NAME} started -----")
-#     obj = DataTransformationDataPipeline()
-#     obj.run()
-#     logger.info(f"----- Stage {STAGE_NAME} completed ----- \n\n")
-# except Exception as e:
-#     logger.exception(e)
-#     raise e 
+try:
+    logger.info(f"----- Stage {STAGE_NAME} started -----")
+    obj = DataTransformationDataPipeline()
+    obj.run()
+    logger.info(f"----- Stage {STAGE_NAME} completed ----- \n\n")
+except Exception as e:
+    logger.exception(e)
+    raise e 
 
 # STAGE_NAME = "Model Training Stage"
 
