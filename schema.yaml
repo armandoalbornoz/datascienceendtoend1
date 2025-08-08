@@ -10,5 +10,3 @@ COLUMNS:
   Location: object
   Salary: int64  
 
-TARGET_COLUMN:
-  name: quality
