@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from pathlib import Path
-
-
+from typing import List
 
 @dataclass
 class DataExtractionConfig:
@@ -86,15 +85,23 @@ class DataTransformationConfig:
 @dataclass
 class ModelTrainerConfig:
     """
+    
     Configuration class for model training operations.
+
+    This class contains all the parameters and paths needed for training
+    machine learning models.
+
     """
     root_dir: Path
     train_data_path: Path
     test_data_path: Path
     model_name: str
-    alpha: float
-    l1_ratio: float
     target_column: str
+    cross_validation: int
+    scoring: str
+    available_models: List[str]
+    target_column: str
+    params: dict
 
 @dataclass
 class ModelEvaluationConfig:    

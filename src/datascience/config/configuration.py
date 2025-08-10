@@ -111,8 +111,7 @@ class ConfigurationManager:
     
     def get_model_trainer_config(self) -> ModelTrainerConfig:
         config = self.config.model_trainer
-        params = self.params.ElasticNet
-        schema = self.schema.TARGET_COLUMN
+        params = self.params
 
         create_directories([config.root_dir])
 
@@ -121,11 +120,15 @@ class ConfigurationManager:
             train_data_path = config.train_data_path,
             test_data_path = config.test_data_path,
             model_name = config.model_name,
-            alpha = params.alpha,
-            l1_ratio = params.l1_ratio,
-            target_column = schema.name
+            cross_validation = int(config.cross_validation),
+            scoring= config.scoring,
+            available_models = config.available_models,
+            target_column = config.target_column,   
+
+            params = params
         )
         return model_trainer_config
+    
     
     def get_model_evaluation_config(self)-> ModelEvaluationConfig:
         config = self.config.model_evaluation

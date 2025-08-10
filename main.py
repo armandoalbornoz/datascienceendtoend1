@@ -77,17 +77,16 @@ except Exception as e:
     logger.exception(e)
     raise e 
 
-# STAGE_NAME = "Model Training Stage"
+STAGE_NAME = "Model Training Stage"
 
-
-# try:
-#     logger.info(f"----- Stage {STAGE_NAME} started -----")
-#     obj = ModelTrainingPipeline()
-#     obj.run()
-#     logger.info(f"----- Stage {STAGE_NAME} completed ----- \n\n")
-# except Exception as e:
-#     logger.exception(e)
-#     raise e 
+try:
+    logger.info(f"----- Stage {STAGE_NAME} started -----")
+    obj = ModelTrainingPipeline()
+    obj.run()
+    logger.info(f"----- Stage {STAGE_NAME} completed ----- \n\n")
+except Exception as e:
+    logger.exception(e)
+    raise e 
 
 
 

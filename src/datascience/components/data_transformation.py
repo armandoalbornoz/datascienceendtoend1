@@ -2,9 +2,9 @@ import os
 from src.datascience import logger
 from sklearn.model_selection import train_test_split
 import pandas as pd
-from src.datascience.entity.config_entity import DataTransformationConfig
 import numpy as np
 from sklearn.preprocessing import StandardScaler
+from src.datascience.entity.config_entity import DataTransformationConfig
 
 class DataTransformation:
     """
@@ -60,6 +60,7 @@ class DataTransformation:
 
             # Eliminating shortwave_radiation_ due to high correlation with sunshine
             cols = [col for col in self.df.columns if col.startswith("shortwave_radiation_")]
+            print(cols)
             self.df = self.df.drop(columns=cols)
 
             # getting daily det0_fao_evapotranspiration and sunshine
@@ -97,21 +98,6 @@ class DataTransformation:
         # Log transform features
         self.df["daily_sunshine"] = np.log1p(self.df["daily_sunshine"])
         self.df["wind_speed_10m_avg"] = np.log1p(self.df["wind_speed_10m_avg"])
-
-
-        # Standardizes features
-        features_to_standardize = [
-            "temperature_2m_avg",
-            "surface_pressure_avg",
-            "relative_humidity_2m_avg",
-            "cloud_cover_avg",
-            "daily_et0_fao_evapotranspiration",
-            "daily_sunshine",
-            "wind_speed_10m_avg"
-        ]
-
-        scaler =  StandardScaler()
-        self.df[features_to_standardize] = scaler.fit_transform(self.df[features_to_standardize])
     
         ## Fixes circular feature
         wind_direction_angles = self.df["wind_direction_10m_avg"]
@@ -130,16 +116,50 @@ class DataTransformation:
 
         try:
             # Split the data into train and test
-            logger.info(f"Splitting the data")
-            train, test = train_test_split(self.df, test_size= self.config.test_size, random_state=self.config.random_state)
-            logger.info("Splitted data into training and test sets")
+            logger.info(f"Splitting the data with stratification on rain")
+            
+            y = self.df["rain"]
+            X = self.df.drop(columns=["rain"])
+
+            X_train, X_test, y_train, y_test = train_test_split(X,y, 
+                                                                test_size = self.config.test_size,
+                                                                random_state= self.config.random_state,
+                                                                stratify=y
+                                                                )
+            
+            logger.info(f"Data has been splitted")
+            logger.info(f"Scaling data")
+
+
+            # Scaling
+
+            features_to_standardize = [
+                "temperature_2m_avg",
+                "surface_pressure_avg",
+                "relative_humidity_2m_avg",
+                "cloud_cover_avg",
+                "daily_et0_fao_evapotranspiration",
+                "daily_sunshine",
+                "wind_speed_10m_avg"
+            ]
+
+            scaler =  StandardScaler()
+            X_train[features_to_standardize] = scaler.fit_transform(X_train[features_to_standardize])
+            X_test[features_to_standardize] = scaler.transform(X_test[features_to_standardize])
+            logger.info(f"Data has been scaled")
+
+            # Recombine with target
+            train = X_train.copy()
+            train["rain"] = y_train.values
+            test = X_test.copy()
+            test["rain"] = y_test.values
 
             train.to_csv(os.path.join(self.config.root_dir, "train.csv"), index = False)
             test.to_csv(os.path.join(self.config.root_dir, "test.csv"), index = False)
-
-            print(f"Files saved to: {self.config.root_dir}")
-            logger.info(train.shape)
-            logger.info(test.shape)
+            
+            
+            logger.info(f"Saved train/test to {self.config.root_dir}")
+            logger.info(f"Train shape: {train.shape} | Test shape: {test.shape}")
         except Exception as e:
             logger.error(f"Error during train-test split: {e}")
             raise
