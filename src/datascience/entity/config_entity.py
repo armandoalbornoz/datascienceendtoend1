@@ -48,24 +48,6 @@ class DataIngestionConfig:
     
 
 @dataclass
-class DataValidationConfig:
-
-    """
-    Configuration class for data validation operations.
-    
-    Attributes:
-        root_dir: Directory where validation artifacts will be stored
-        status_file: Name of the status file to track validation results
-        unzip_data_dir: Directory containing the unzipped data to validate
-        all_schema: Dictionary containing the expected data schema
-    """
-    root_dir: Path
-    STATUS_FILE: str
-    unzip_data_dir: Path
-    all_schema: dict
-
-
-@dataclass
 class DataTransformationConfig:
     """
     Configuration class for data transformation operations.
@@ -111,7 +93,7 @@ class ModelEvaluationConfig:
     root_dir: Path
     test_data_path: Path
     model_path: Path
-    all_params: dict
-    metric_file_name: Path
+    experiment_name: str
     target_column: str
-    mlflow_uri: str
+    experiment_name: str
+    train_run_id_path: Path

@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 from src.datascience import logger
 from src.datascience.entity.config_entity import ETLDataLoadingConfig
 
-
 load_dotenv()
 
 class DataLoading:

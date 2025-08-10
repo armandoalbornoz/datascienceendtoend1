@@ -13,7 +13,7 @@ class ModelEvaluationPipeline:
             config = ConfigurationManager()
             model_evaluation_config = config.get_model_evaluation_config()
             model_evaluation = ModelEvaluation(config=model_evaluation_config)
-            model_evaluation.log_to_mlflow()
+            model_evaluation.evaluate()
             
         except Exception as e:
             raise e
