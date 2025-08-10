@@ -12,8 +12,10 @@ ensure
 joblib
 types-PyYAML
 Flask
-Flask-Cors
+Flask-Corsgit 
 ipykernel
 python-dotenv
+dvc
+dvc-s3
 
 ##-e .
