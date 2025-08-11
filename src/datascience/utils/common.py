@@ -178,3 +178,18 @@ def load_bin(path: Path) -> Any:
     except Exception as e:
         logger.error(f"Error loading binary file {path}: {e}")
         raise
+
+
+@ensure_annotations
+def get_env(key: str, default: str = "") -> str:
+    # loads streamlit secrets if running in production else load from dotenv
+    try:
+        import streamlit as st
+        if hasattr(st, "secrets") and key in st.secrets:
+            val = str(st.secrets[key])
+            os.environ[key] = val
+            return val
+    except Exception:
+        pass
+    # Use load_env() locally
+    return os.getenv(key, default)

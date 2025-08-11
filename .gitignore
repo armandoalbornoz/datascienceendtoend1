@@ -5,6 +5,10 @@ __pycache__/
 logs/
 mlruns/
 artifacts/model_evaluation/
-artifacts/model_trainer/
+artifacts/model_trainer/cv_leaderboard.json
+artifacts/model_trainer/logistic_regression_cv_results.json
+artifacts/model_trainer/random_forest_cv_results.json
+artifacts/model_trainer/svm_cv_results.json
+artifacts/model_trainer/train_run_id.txt
 .env
 data/

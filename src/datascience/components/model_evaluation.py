@@ -19,6 +19,7 @@ import json
 from dotenv import load_dotenv
 from src.datascience.entity.config_entity import ModelEvaluationConfig
 load_dotenv()
+from src.datascience.utils.common import get_env
 
 class ModelEvaluation:
     """
@@ -42,9 +43,9 @@ class ModelEvaluation:
 
     def _init_mlflow(self):
         # authentication
-        os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME")
-        os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD")
-        mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI", "http://localhost:5000"))
+        os.environ["MLFLOW_TRACKING_USERNAME"] = get_env("MLFLOW_TRACKING_USERNAME")
+        os.environ["MLFLOW_TRACKING_PASSWORD"] = get_env("MLFLOW_TRACKING_PASSWORD")
+        mlflow.set_tracking_uri(get_env("MLFLOW_TRACKING_URI", "http://localhost:5000"))
         mlflow.set_experiment(self.config.experiment_name)
 
 

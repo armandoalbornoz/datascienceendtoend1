@@ -3,6 +3,7 @@ import pandas as pd
 import psycopg2
 from psycopg2.extras import execute_values
 from dotenv import load_dotenv
+from src.datascience.utils.common import get_env
 from src.datascience import logger
 from src.datascience.entity.config_entity import ETLDataLoadingConfig
 
@@ -13,17 +14,16 @@ class DataLoading:
     Component for data loading operations including loading the data to an RDS instance
     """
     def __init__(self, config: ETLDataLoadingConfig, data: pd.DataFrame):
-        load_dotenv()
 
         self.config = config
         self.data = data
 
         self.config = {
-            'host': os.getenv("POSTGRES_HOST"),
+            'host': get_env("POSTGRES_HOST"),
             'port': int(self.config.port),
-            'database': os.getenv("POSTGRES_DB"),
-            'user': os.getenv("POSTGRES_USER"),
-            'password': os.getenv("POSTGRES_PASSWORD")
+            'database': get_env("POSTGRES_DB"),
+            'user': get_env("POSTGRES_USER"),
+            'password': get_env("POSTGRES_PASSWORD")
         }
 
         self.connection = None

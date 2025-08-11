@@ -3,7 +3,6 @@ import pandas as pd
 from datetime import datetime, timedelta
 import os 
 from src.datascience import logger
-from dotenv import load_dotenv
 from src.datascience.entity.config_entity import DataExtractionConfig
 
 class DataExtraction:

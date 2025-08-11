@@ -13,6 +13,7 @@ import os
 from dotenv import load_dotenv
 import json
 from src.datascience.entity.config_entity import ModelTrainerConfig
+from src.datascience.utils.common import get_env
 load_dotenv()
 
 EXPERIMENT_NAME = "rain-prediction"

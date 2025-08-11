@@ -4,8 +4,11 @@ import pandas as pd
 import psycopg2
 import os
 from dotenv import load_dotenv
+from src.datascience.utils.common import get_env 
 from src.datascience import logger
 from src.datascience.entity.config_entity import DataIngestionConfig
+
+load_dotenv()
 
 class DataIngestion:
     """
@@ -27,14 +30,12 @@ class DataIngestion:
         """
         Gets the data from a RDS instance and saves it to a csv file
         """
-        load_dotenv()
-
         try:
             conn = psycopg2.connect(
-                host=os.getenv("POSTGRES_HOST"),
-                database=os.getenv("POSTGRES_DB"),
-                user=os.getenv("POSTGRES_USER"),
-                password=os.getenv("POSTGRES_PASSWORD")
+                host=get_env("POSTGRES_HOST"),
+                database=get_env("POSTGRES_DB"),
+                user= get_env("POSTGRES_USER"),
+                password= get_env("POSTGRES_PASSWORD")
             )   
         
             df = pd.read_sql("SELECT * FROM weather_data", conn) # Get data from databases
