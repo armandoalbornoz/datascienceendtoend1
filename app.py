@@ -1,4 +1,3 @@
-# app.py
 import os
 import json
 import math
@@ -10,18 +9,18 @@ import streamlit as st
 import joblib
 from src.datascience.utils.common import dvc_pull_once
 
+# -----------------------------
 # Config
-
-
+# -----------------------------
 MODEL_PATH = "artifacts/model_trainer/best_model.joblib"
 
+# Ensure model exists (DVC pull if missing)
 if not Path(MODEL_PATH).exists():
     code, out, err = dvc_pull_once()
     if code != 0:
         st.error("DVC pull failed")
         st.code(err or out)
         st.stop()
-
 
 DEFAULT_MODEL_PATH = "artifacts/model_trainer/best_model.joblib"
 DEFAULT_FEATURES_PATH = "artifacts/model_trainer/feature_names.json"
@@ -89,6 +88,7 @@ st.markdown(
       .assistant { background: #f1f5f9; }
       .user { background: #ecfeff; }
       .small { font-size: 0.85rem; color: #57606a; }
+      .side-section { margin: 0.5rem 0 1rem 0; font-weight: 600; opacity: 0.8; }
     </style>
     """,
     unsafe_allow_html=True,
@@ -97,11 +97,69 @@ st.markdown(
 st.title("🌧️ Rain Prediction")
 st.caption("Expects the same **transformed** features used during training.")
 
-# Paths
+# --- Short intro ---
+st.markdown(
+    """
+**Project overview:** This app is the final step of an end-to-end ML pipeline:
+ETL → data ingestion → data transformation → model training → model evaluation → UI.  
+We use **DVC/DagsHub** for versioning and experiment tracking with **MLflow**.
+    """
+)
+
+# -----------------------------
+# Sidebar
+# -----------------------------
 model_path = st.sidebar.text_input("Model path", DEFAULT_MODEL_PATH)
 features_path = st.sidebar.text_input("Feature names path (optional)", DEFAULT_FEATURES_PATH)
 
+# Pretty MLflow buttons
+st.sidebar.markdown('<div class="side-section">Experiment Tracking</div>', unsafe_allow_html=True)
+
+_mlflow_uri_env = os.getenv("MLFLOW_TRACKING_URI", "")
+_dag_user = os.getenv("DAGSHUB_USERNAME", "")
+_dag_repo = os.getenv("DAGSHUB_REPO", "")
+_mlflow_fallback = f"https://dagshub.com/{_dag_user}/{_dag_repo}.mlflow" if (_dag_user and _dag_repo) else ""
+_mlflow_uri = _mlflow_uri_env or _mlflow_fallback
+
+if _mlflow_uri:
+    st.sidebar.markdown(
+        f"""
+        <a href="{_mlflow_uri}" target="_blank" style="
+            display: block;
+            background-color: #2E86C1;
+            color: white;
+            padding: 10px 14px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 8px;
+        ">📊 View MLflow Dashboard</a>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Always show the direct link to your project’s MLflow (DagsHub)
+st.sidebar.markdown(
+    """
+    <a href="https://dagshub.com/armandoalbornoz/datascienceendtoend1.mlflow/#/experiments/0?searchFilter=&orderByKey=attributes.start_time&orderByAsc=false&startTime=ALL&lifecycleFilter=Active&modelVersionFilter=All+Runs&datasetsFilter=W10%3D"
+       target="_blank" style="
+        display: block;
+        background-color: #28B463;
+        color: white;
+        padding: 10px 14px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        text-align: center;
+    ">🔗 Open Project MLflow</a>
+    """,
+    unsafe_allow_html=True
+)
+
+# -----------------------------
 # Load model + features
+# -----------------------------
 try:
     model = load_model(model_path)
     st.sidebar.success("Model loaded")
@@ -111,30 +169,33 @@ except Exception as e:
 
 FEATURES = load_feature_names(features_path)
 
-
+# -----------------------------
+# Inputs
+# -----------------------------
 st.markdown('<div class="bubble user">', unsafe_allow_html=True)
 st.subheader("Input features")
 
-# Because your model expects already-transformed features (log/standardized),
-# we default inputs to 0.0. If you want to feed raw values, you’ll need to
-# replicate the exact training transforms here (or serve a Pipeline).
 col1, col2 = st.columns(2)
 
 with col1:
     surface_pressure_avg = st.number_input("surface_pressure_avg", value=0.0, step=0.01)
     temperature_2m_avg = st.number_input("temperature_2m_avg", value=0.0, step=0.01)
-    daily_sunshine = st.number_input("daily_sunshine", value=0.0, step=0.01,
-                                     help="Transformed value used during training")
+    daily_sunshine = st.number_input(
+        "daily_sunshine", value=0.0, step=0.01,
+        help="Transformed value used during training"
+    )
     daily_et0 = st.number_input("daily_et0_fao_evapotranspiration", value=0.0, step=0.01)
 
 with col2:
     relative_humidity_2m_avg = st.number_input("relative_humidity_2m_avg", value=0.0, step=0.01)
     cloud_cover_avg = st.number_input("cloud_cover_avg", value=0.0, step=0.01)
-    wind_speed_10m_avg = st.number_input("wind_speed_10m_avg", value=0.0, step=0.01,
-                                         help="Transformed value used during training")
+    wind_speed_10m_avg = st.number_input(
+        "wind_speed_10m_avg", value=0.0, step=0.01,
+        help="Transformed value used during training"
+    )
     wind_deg = st.slider("wind_direction (degrees)", min_value=0, max_value=359, value=0)
 
-# Compute sin/cos from degrees for the required features
+# Compute sin/cos from degrees
 wind_sin, wind_cos = compute_wind_components(wind_deg)
 
 row = {
@@ -154,7 +215,9 @@ st.markdown("</div>", unsafe_allow_html=True)
 with st.expander("Show input row (dict)"):
     st.json(row)
 
-# Predict button
+# -----------------------------
+# Predict
+# -----------------------------
 if st.button("Predict"):
     try:
         label, score, is_prob, df_used = predict_once(model, row, FEATURES)
