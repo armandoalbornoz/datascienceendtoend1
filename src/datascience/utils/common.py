@@ -197,34 +197,39 @@ def get_env(key: str, default: str = "") -> str:
     # Use load_env() locally
     return os.getenv(key, default)
 
+import os, subprocess
+from pathlib import Path
+import streamlit as st
 
 
-MODEL_PATH = "artifacts/model_trainer/best_model.joblib"
-
-def env(k, d=""):
+def s(k, d=""):  # secrets/env helper
     return st.secrets.get(k, os.getenv(k, d))
 
 @st.cache_resource
 def dvc_pull_once():
-    # Optional: configure DVC remote creds from secrets (example: DagsHub)
-    user = env("DAGSHUB_USERNAME", "")
-    token = env("DAGSHUB_TOKEN", "")
-    try:
-        if user and token:
-            subprocess.run(
-                ["dvc", "remote", "modify", "origin", "auth", "basic"],
-                check=True, capture_output=True, text=True
-            )
-            subprocess.run(
-                ["dvc", "remote", "modify", "--local", "origin", "user", user],
-                check=True, capture_output=True, text=True
-            )
-            subprocess.run(
-                ["dvc", "remote", "modify", "--local", "origin", "password", token],
-                check=True, capture_output=True, text=True
-            )
+    user  = s("DAGSHUB_USERNAME", "")
+    access_key_id = s("ACCESS_KEY_ID", "")
+    token = s("DAGSHUB_TOKEN", "")
+    repo  = "datascienceendtoend1"
+    if not (user and token and repo):
+        return 1, "", "Missing DAGSHUB_USERNAME / DAGSHUB_TOKEN / DAGSHUB_REPO"
 
-        res = subprocess.run(["dvc", "pull", "-r", "origin"], capture_output=True, text=True)
+    endpoint = f"https://dagshub.com/{user}/{repo}.s3"
+
+    try:
+        # DagsHub’s exact recipe:
+        subprocess.run(["dvc", "remote", "add", "origin", "s3://dvc"],
+                       check=False, capture_output=True, text=True)  # ok if exists
+        subprocess.run(["dvc", "remote", "modify", "origin", "endpointurl", endpoint],
+                       check=True, capture_output=True, text=True)
+        subprocess.run(["dvc", "remote", "modify", "--local", "origin", "access_key_id", access_key_id],
+                       check=True, capture_output=True, text=True)
+        subprocess.run(["dvc", "remote", "modify", "--local", "origin", "secret_access_key", token],
+                       check=True, capture_output=True, text=True)
+        res = subprocess.run(["dvc", "pull", "-r", "origin", "-v"],
+                             capture_output=True, text=True)
         return res.returncode, res.stdout, res.stderr
+    except FileNotFoundError:
+        return 127, "", "dvc not found. Add 'dvc[s3]' to requirements.txt"
     except subprocess.CalledProcessError as e:
         return e.returncode, e.stdout, e.stderr

@@ -16,7 +16,11 @@ from src.datascience.utils.common import dvc_pull_once
 MODEL_PATH = "artifacts/model_trainer/best_model.joblib"
 
 if not Path(MODEL_PATH).exists():
-    dvc_pull_once()
+    code, out, err = dvc_pull_once()
+    if code != 0:
+        st.error("DVC pull failed")
+        st.code(err or out)
+        st.stop()
 
 
 DEFAULT_MODEL_PATH = "artifacts/model_trainer/best_model.joblib"
