@@ -8,10 +8,17 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import joblib
+from src.datascience.utils.common import dvc_pull_once
 
-# -----------------------------
 # Config
-# -----------------------------
+
+
+MODEL_PATH = "artifacts/model_trainer/best_model.joblib"
+
+if not Path(MODEL_PATH).exists():
+    dvc_pull_once()
+
+
 DEFAULT_MODEL_PATH = "artifacts/model_trainer/best_model.joblib"
 DEFAULT_FEATURES_PATH = "artifacts/model_trainer/feature_names.json"
 
