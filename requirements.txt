@@ -11,11 +11,10 @@ tqdm
 ensure
 joblib
 types-PyYAML
-Flask
-Flask-Corsgit 
 ipykernel
 python-dotenv
 dvc
 dvc-s3
+streamlit
 
 ##-e .
