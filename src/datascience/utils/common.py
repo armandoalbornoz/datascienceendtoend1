@@ -224,7 +224,7 @@ def dvc_pull_once():
                 check=True, capture_output=True, text=True
             )
 
-        res = subprocess.run(["dvc", "pull", "-v"], capture_output=True, text=True)
+        res = subprocess.run(["dvc", "pull", "-r", "origin"], capture_output=True, text=True)
         return res.returncode, res.stdout, res.stderr
     except subprocess.CalledProcessError as e:
         return e.returncode, e.stdout, e.stderr
