@@ -212,15 +212,15 @@ def dvc_pull_once():
     try:
         if user and token:
             subprocess.run(
-                ["dvc", "remote", "modify", "dagshub", "auth", "basic"],
+                ["dvc", "remote", "modify", "origin", "auth", "basic"],
                 check=True, capture_output=True, text=True
             )
             subprocess.run(
-                ["dvc", "remote", "modify", "--local", "dagshub", "user", user],
+                ["dvc", "remote", "modify", "--local", "origin", "user", user],
                 check=True, capture_output=True, text=True
             )
             subprocess.run(
-                ["dvc", "remote", "modify", "--local", "dagshub", "password", token],
+                ["dvc", "remote", "modify", "--local", "origin", "password", token],
                 check=True, capture_output=True, text=True
             )
 
