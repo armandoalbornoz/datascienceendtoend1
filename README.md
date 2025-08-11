@@ -32,3 +32,6 @@ The project handles everything from raw data injestion using an ETL pipeline to 
 5. **Deployment (Streamlit App)**  
    - On startup, app.py pulls `best_model.joblib` from DVC remote if missing.  
    - Accepts transformed feature inputs, computes predictions and probabilities.  
+
+6. Prediction App
+    Here you can find the prediction App: [text](https://rainendtoend.streamlit.app/)
